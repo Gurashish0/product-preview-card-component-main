@@ -1,0 +1,150 @@
+body {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container .perfume {
+    width: 100%;
+}
+
+.container {
+    padding: 1rem;
+
+}
+
+.container h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+h1 {
+    color: hsl(212, 21%, 14%);
+}
+
+h1,
+.price {
+    font-family: Fraunces;
+}
+
+h2 {
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    ;
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+}
+
+button,
+li {
+    font-family: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container div:first-child img {
+    border-radius: 0.5rem 0.5rem 0 0;
+    margin-top: 3rem;
+}
+
+.container div:last-child {
+    background: #fff;
+    margin-top: -0.3rem;
+    padding: 1.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.container p {
+    margin-bottom: 2rem;
+}
+
+.container ul {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.container ul li:first-child {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.container .btn {
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .btn img {
+    margin-right: 0.5rem;
+}
+
+.attribution {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    color: blue;
+}
+
+@media (min-width:640px) {
+
+    body {
+        height: 100vh;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 600px;
+    }
+
+    .container div:first-child img {
+        height: 100%;
+        margin-top: 0;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    .container div:last-child {
+        border-radius: 0 0.5rem 0.5rem 0;
+        margin-top: 0;
+    }
+
+    picture img {
+        height: 100%;
+    }
+
+}
